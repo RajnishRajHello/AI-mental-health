@@ -18,6 +18,7 @@ The application combines a React frontend with an Express + MongoDB backend, and
 ## Tech Stack
 
 ### Frontend
+
 - React
 - Vite
 - React Router
@@ -25,6 +26,7 @@ The application combines a React frontend with an Express + MongoDB backend, and
 - @react-oauth/google
 
 ### Backend
+
 - Node.js
 - Express.js
 - MongoDB with Mongoose

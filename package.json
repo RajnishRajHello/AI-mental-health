@@ -1,0 +1,22 @@
+{
+  "name": "mindcare-ai",
+  "version": "1.0.0",
+  "description": "AI-Based Mental Health Monitoring Solution",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "npx concurrently \"node server/server.js\" \"cd client && npm run dev\"",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd client && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "google-auth-library": "^11.0.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^9.9.2",
+    "openai": "^4.52.0"
+  }
+}
