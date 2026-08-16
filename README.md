@@ -88,20 +88,27 @@ npm run install-all
 
 ### 3. Configure environment variables
 
-Create a `.env` file in the project root with the following values:
+Copy the example environment file and fill in your own values:
+
+```bash
+copy .env.example .env
+```
+
+Then update the generated `.env` file with your keys:
 
 ```env
 PORT=3000
 MONGODB_URI=mongodb://localhost:27017/mindcare-ai
-JWT_SECRET=your_super_secret_key
-GOOGLE_CLIENT_ID=your_google_client_id
-OPENAI_API_KEY=your_openai_api_key
+JWT_SECRET=change_this_to_a_long_random_secret
+GOOGLE_CLIENT_ID=your_google_client_id_here
+OPENAI_API_KEY=your_openai_api_key_here
+VITE_GOOGLE_CLIENT_ID=your_google_client_id_here
 ```
 
-If your frontend uses Google sign-in, also add a client-side environment variable in `client/.env`:
+If you are on macOS or Linux, use:
 
-```env
-VITE_GOOGLE_CLIENT_ID=your_google_client_id
+```bash
+cp .env.example .env
 ```
 
 ### 4. Run the app
